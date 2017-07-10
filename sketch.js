@@ -23,18 +23,18 @@ function setup() {
 }
 
 function draw() {
-  background(0);
-  loadPixels();
-  for (var y = 0; y < height; y++) {
-    for (var x = 0; x < width; x++) {
-      var index = (x + y * width)*4;
-      pixels[index+0] = 158;
-      pixels[index+1] = -y+600; //234;
-      pixels[index+2] = 248;
-      pixels[index+3] = y;
-    }
-  }
-  updatePixels();
+   clear();
+  // loadPixels();
+  // for (var y = 0; y < height; y++) {
+  //   for (var x = 0; x < width; x++) {
+  //     var index = (x + y * width)*4;
+  //     pixels[index+0] = 158;
+  //     pixels[index+1] = -y+600; //234;
+  //     pixels[index+2] = 248;
+  //     pixels[index+3] = y;
+  //   }
+  // }
+  // updatePixels();
   drawCircle(width/2, height/3, 360);
   speed = 1.5;
   translate(width / 2, height / 2);
